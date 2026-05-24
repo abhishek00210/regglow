@@ -58,7 +58,6 @@ document.querySelector("#notifyForm")?.addEventListener("submit", (event) => {
 });
 
 document.querySelector("#contactForm")?.addEventListener("submit", (event) => {
-  event.preventDefault();
   const form = event.currentTarget;
   const lead = {
     name: form.name.value.trim(),
@@ -68,14 +67,5 @@ document.querySelector("#contactForm")?.addEventListener("submit", (event) => {
   };
 
   saveLead("regflowContactMessages", lead);
-
-  const subject = encodeURIComponent("RegFlow AI contact request");
-  const bodyText = encodeURIComponent(
-    `Hi RegFlow team,\n\nName: ${lead.name}\nEmail: ${lead.email}\n\nMessage:\n${lead.message}`
-  );
-
-  document.querySelector("#contactResult").textContent =
-    "Saved. Opening your email app with the message ready to send.";
-  window.location.href = `mailto:contact@regflow.io?subject=${subject}&body=${bodyText}`;
-  form.reset();
+  document.querySelector("#contactResult").textContent = "Sending your message...";
 });
