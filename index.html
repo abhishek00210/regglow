@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="RegFlow AI is launching soon: AI-assisted ROW dossier preparation, CTD/ACTD structuring, gap checks, localization, and eCTD-ready workflows."
+    />
+    <meta name="theme-color" content="#080808" />
+    <title>RegFlow AI - Coming Soon</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="preloader" aria-hidden="true">
+      <span></span><span></span><span></span><span></span>
+    </div>
+
+    <div class="page-shell">
+      <header class="site-header">
+        <nav class="nav" aria-label="Primary navigation">
+          <a class="logo" href="#home" aria-label="RegFlow AI home">
+            <span>RegFlow</span><small>AI</small>
+          </a>
+
+          <button class="menu-toggle" type="button" aria-label="Toggle menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+          </button>
+
+          <div class="nav-menu" id="navMenu">
+            <a class="active" href="#home">Home</a>
+            <a href="#notify">Notify Me</a>
+            <a href="#contact">Contact Us</a>
+          </div>
+
+          <div class="social-icons" aria-label="Social links">
+            <a href="https://www.twitter.com/" target="_blank" rel="noreferrer" aria-label="X">X</a>
+            <a href="https://www.facebook.com/" target="_blank" rel="noreferrer" aria-label="Facebook">f</a>
+            <a href="https://www.instagram.com/" target="_blank" rel="noreferrer" aria-label="Instagram">◎</a>
+          </div>
+        </nav>
+      </header>
+
+      <main>
+        <section class="hero section" id="home">
+          <div class="container hero-inner">
+            <div class="hero-row">
+              <h1>Our New Website is</h1>
+            </div>
+
+            <div class="hero-row split">
+              <p>
+                We are building an AI-powered regulatory platform for ROW dossier preparation, CTD/ACTD structure,
+                localization, gap checks, and eCTD-ready workflows.
+              </p>
+              <h2>Coming Soon</h2>
+            </div>
+
+            <div class="hero-row bottom-line">
+              <a class="circle-link" href="#contact" aria-label="Get in touch with RegFlow AI">
+                <svg viewBox="0 0 500 500" aria-hidden="true">
+                  <defs>
+                    <path id="circlePath" d="M50,250c0-110.5,89.5-200,200-200s200,89.5,200,200s-89.5,200-200,200S50,360.5,50,250" />
+                  </defs>
+                  <text>
+                    <textPath href="#circlePath">customer support * get in touch with us *</textPath>
+                  </text>
+                </svg>
+                <span></span>
+              </a>
+
+              <h3>Stay Tuned!</h3>
+
+              <div class="notify-line">
+                <i></i>
+                <a class="btn" href="#notify">Notify Me</a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section notify" id="notify">
+          <div class="container narrow">
+            <p class="kicker">When We Go Live</p>
+            <h2>Notify Me</h2>
+            <hr class="separator" />
+            <p class="lead">Sign up to be the first to know when RegFlow AI launches.</p>
+
+            <form class="line-form" id="notifyForm">
+              <label for="notifyEmail">Enter Your Email Here:</label>
+              <input id="notifyEmail" name="email" type="email" required autocomplete="email" />
+              <button class="btn wide" type="submit">Notify Me!</button>
+              <p class="form-result" id="notifyResult" role="status" aria-live="polite"></p>
+            </form>
+          </div>
+        </section>
+
+        <section class="section contact" id="contact">
+          <div class="container">
+            <div class="section-head">
+              <p class="kicker">Get in Touch</p>
+              <h2>Contact</h2>
+              <hr class="separator" />
+            </div>
+
+            <div class="contact-grid">
+              <div class="contact-copy">
+                <h3>
+                  <span>We launch our new website as soon as possible.</span>
+                  <em>For customer support and query, feel free to get in touch with us.</em>
+                </h3>
+
+                <h4>Living In:</h4>
+                <p>India, serving pharma regulatory teams globally.</p>
+
+                <h4>Email:</h4>
+                <p><a href="mailto:contact@regflow.io">contact@regflow.io</a></p>
+
+                <h4>Call:</h4>
+                <p><a href="tel:+917771011822">+91 77710 11822</a></p>
+              </div>
+
+              <form class="line-form contact-form" id="contactForm">
+                <h3>Send me a note</h3>
+                <label for="name">Your Name:</label>
+                <input id="name" name="name" type="text" required autocomplete="name" />
+
+                <label for="email">Your Email:</label>
+                <input id="email" name="email" type="email" required autocomplete="email" />
+
+                <label for="message">How can I help you?:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button class="btn wide" type="submit">Send Message</button>
+                <p class="form-result" id="contactResult" role="status" aria-live="polite"></p>
+              </form>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer section">
+        <div class="container">
+          <div class="footer-links">
+            <a href="https://www.instagram.com/" target="_blank" rel="noreferrer">Instagram</a>
+            <a href="https://twitter.com/" target="_blank" rel="noreferrer">X (Twitter)</a>
+            <a href="https://www.facebook.com/" target="_blank" rel="noreferrer">Facebook</a>
+            <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a href="https://www.youtube.com/" target="_blank" rel="noreferrer">YouTube</a>
+          </div>
+          <p>Copyright &copy; 2026 <a href="#home">RegFlow AI</a>. All Rights Reserved.</p>
+          <p>Designed for RegFlow.io</p>
+        </div>
+      </footer>
+    </div>
+
+    <a class="back-to-top" href="#home" aria-label="Back to top"></a>
+    <script src="./script.js"></script>
+  </body>
+</html>
